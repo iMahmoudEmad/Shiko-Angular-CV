@@ -1,0 +1,13 @@
+<div class="who-am">
+  <div class="row">
+    <div class="col-md-6 col-sm-12">
+      <img [src]="person.picture" [alt]="person.name">
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <h2>Who am I?</h2>
+      <p *ngFor="let data of person.paragraphs">
+        {{data}}
+      </p>
+    </div>
+  </div>
+</div>

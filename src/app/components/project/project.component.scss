@@ -1,0 +1,81 @@
+@import './../../../variables.scss';
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 60vh;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  &:nth-child(even) .project--picture {
+    order: 1;
+    padding-right: 0;
+    padding-left: 2rem;
+  }
+
+  &--picture,
+  &--details {
+    width: 50%;
+  }
+
+  &--picture {
+    padding-right: 2rem;
+  }
+
+  img {
+    width: 70%;
+    height: 250px;
+    margin: auto;
+    display: block;
+  }
+
+  &--details {
+    &__tech {
+      font-size: 1rem;
+      color: #855ef6;
+    }
+
+    &__name {
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: capitalize;
+      margin-bottom: 1rem;
+      margin-top: 0;
+      letter-spacing: 0.05rem;
+    }
+
+    &__description {
+      padding-left: 2rem;
+      line-height: 2rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: .8rem;
+      color: rgba($white-color, 0.8);
+    }
+
+    &__route {
+      text-align: right;
+      text-transform: uppercase;
+
+      a {
+        color: #855ef6;
+        letter-spacing: 1px;
+        position: relative;
+        font-size: .7rem;
+        font-weight: 600;
+
+        &:before {
+          content: "";
+          width: 15%;
+          height: 1px;
+          background-color: #855ef6;
+          position: absolute;
+          bottom: -0.5rem;
+          left: 0;
+        }
+      }
+    }
+  }
+}

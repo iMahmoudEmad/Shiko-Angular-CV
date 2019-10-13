@@ -1,0 +1,7 @@
+<div class="text-under-image">
+  <img [src]="image" [alt]="title" *ngIf="title && image" />
+  <div class="content">
+    <h2 class="title" *ngIf="title">{{title}}</h2>
+    <p *ngIf="description">{{ description }}</p>
+  </div>
+</div>

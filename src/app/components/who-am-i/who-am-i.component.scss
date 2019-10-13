@@ -1,0 +1,37 @@
+@import './../../../_variables.scss';
+
+.who-am {
+  padding: 3rem;
+
+  img {
+    width: 80%;
+    height: 500px;
+    z-index: 6;
+    position: relative;
+    border-radius: 4px;
+    margin: -100px auto 1rem;
+  }
+
+  h2,
+  p {
+    line-height: 2rem;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: .8rem;
+    line-height: 1.3rem;
+    margin-bottom: .7rem;
+    color: $main-color;
+    margin-left: 2rem;
+  }
+}

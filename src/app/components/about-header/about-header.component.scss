@@ -1,0 +1,15 @@
+@import './../../../variables.scss';
+
+header {
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    color: rgba($white-color, .5);
+    font-size: .9rem;
+  }
+}

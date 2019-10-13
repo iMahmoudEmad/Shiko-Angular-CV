@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="case-study-header text-center">
+    <h2>
+      Latest Case Studies
+    </h2>
+    <p>
+      See how I apply my process by creating results and everlasting value for the clients I've had the pleasure
+      collaborating with.
+    </p>
+  </div> <!-- .case-study-header -->
+
+  <div class="row">
+    <div class="col-md-6 col-xs-xs-12" *ngFor="let case of [1, 2]">
+      <div class="cases text-center" routerLink="/project">
+        <span>C</span>
+        <div class="case">
+          <h2>clique meet</h2>
+          <p>connecting mutual groups.</p>
+        </div> <!-- .case -->
+      </div> <!-- .cases -->
+    </div> <!-- .col-md-6 -->
+  </div> <!-- .row -->
+</div> <!-- .container -->

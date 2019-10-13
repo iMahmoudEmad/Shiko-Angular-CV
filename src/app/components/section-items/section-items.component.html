@@ -1,0 +1,14 @@
+<section class="sectionDetails" *ngFor="let section of sections">
+  <div class="container">
+    <h2>{{ section.baseTitle }}</h2>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12" *ngFor="let cap of section.sectionItems">
+        <h3>{{ cap.title }}</h3>
+        <ul class="list-unstyled" *ngIf="!isString(cap.lists)">
+          <li *ngFor="let list of cap.lists">{{ list }}</li>
+        </ul>
+        <p *ngIf="isString(cap.lists)">{{ cap.lists }}</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,40 @@
+@import './../../../variables.scss';
+
+.sectionDetails {
+  background-color: $main-color;
+  padding: 3rem;
+
+  h2,
+  h3,
+  ul {
+    text-transform: capitalize;
+  }
+
+  h3,
+  ul {
+    font-size: 1rem;
+  }
+
+  ul,
+  p {
+    color: rgba($white-color, .5);
+    font-size: .9rem;
+    line-height: 1.7rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+  }
+
+  .row {
+    margin-left: 1rem;
+  }
+
+  h3 {
+    color: rgba($white-color, .85);
+    font-weight: 700;
+    margin-bottom: .5rem;
+  }
+}

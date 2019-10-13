@@ -1,0 +1,42 @@
+@import './../../../variables.scss';
+
+header {
+  h1 {
+    width: 50vw;
+    margin: auto;
+    font-size: 3rem;
+    line-height: 4.5rem;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    span {
+      margin-right: .5rem;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 2rem;
+    padding-bottom: .5rem;
+    font-size: .75rem;
+    color: rgba($white-color, .5);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .5px;
+    border-bottom: 1px solid rgba($white-color, .5);
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      color: $white-color;
+      border-color: $white-color;
+    }
+  }
+}

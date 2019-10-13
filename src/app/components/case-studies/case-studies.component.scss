@@ -1,0 +1,74 @@
+@import './../../../variables.scss';
+
+.case-study-header {
+  margin-bottom: 2rem;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  p {
+    max-width: 25rem;
+    margin: auto;
+    color: rgba($white-color, .8);
+    line-height: 2rem;
+    font-size: .9rem;
+
+    @media(max-width:600px) {
+      width: 100%;
+    }
+  }
+}
+
+.col-md-6:last-child:before {
+  content: '';
+  border-left: 1px solid rgba($white-color, 0.05);
+  position: absolute;
+  height: 50%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.col-md-6:last-child .case {
+  right: 2rem;
+}
+
+.cases {
+  position: relative;
+  outline: none;
+
+  span {
+    font-size: 30vw;
+    font-weight: 700;
+    color: #61D97A;
+  }
+
+  .case {
+    background-color: $main-color;
+    padding: 1rem;
+    position: absolute;
+    top: 38%;
+    width: 40%;
+    text-transform: capitalize;
+    box-shadow: 5px 14px 15px 0 rgba($main-color, 0.8);
+    cursor: pointer;
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #61D97A;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: $white-color;
+      margin-bottom: 0;
+    }
+  }
+}

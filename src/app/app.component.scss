@@ -1,0 +1,61 @@
+@import './../variables.scss';
+
+.navbar {
+  background-color: $main-color;
+  padding: 0;
+
+  &-brand {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media(max-width:992px) {
+      top: 1rem;
+      left: 1rem;
+      margin: unset;
+      padding: 0;
+    }
+  }
+
+  &-toggler {
+    border: 1px solid rgba($white-color, .5);
+    border-radius: 2px;
+    color: $white-color;
+    margin: 1rem;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    outline: none;
+  }
+
+  .navbar-menu-items .nav-link {
+    border-bottom: 1px solid rgba($white-color, .5);
+    padding-bottom: .1rem;
+  }
+
+  .nav-link {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    margin-right: 1rem;
+    font-size: .8rem;
+    color: rgba($white-color, .5);
+    text-transform: capitalize;
+
+    .fa {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+header,
+main {
+  height: 100vh;
+}

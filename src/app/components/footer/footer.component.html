@@ -1,0 +1,21 @@
+<footer class="footer">
+    <div class="footer--data">
+      <div class="footer--data__content">
+        <h2>
+          Have an exciting project?
+          <a href="mailto:shiko@shiko.com">lets talk.</a>
+        </h2>
+      </div> <!-- .footer--data__content -->
+      <ul class="socialLinks">
+        <li *ngFor="let social of socialLinks">
+          <a [href]="social.url" target="_blank">
+            {{social.icon}}
+          </a>
+        </li>
+      </ul>
+    </div> <!-- .footer--data -->
+    <div class="copyright">
+      <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" alt="Shiko Logo" class="logo">
+      <p>copyright ©2019 shiko shakur</p>
+    </div>
+  </footer>
