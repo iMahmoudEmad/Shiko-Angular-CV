@@ -1,20 +1,17 @@
 <section class="text-beside-image">
-  <div class="container">
-    <!-- <div class="row"> -->
-      <div class="item" *ngFor="let item of [1,2]">
-        <div class="col-md-6 col-sm-12">
-          <img [src]="image" [alt]="title" *ngIf="title && image" loading="lazy" />
-        </div> <!-- .col-md-6 -->
-        <div class="col-md-6 col-sm-12">
-          <div class="content">
-            <h2 class="title" *ngIf="title">{{ title }}</h2>
-            <p *ngIf="description">{{ description }}</p>
-            <div class="tools" *ngIf="tools">
-              Tools used: <span *ngFor="let tool of tools">{{ tool }}</span>
-            </div>
-          </div> <!-- .content -->
-        </div> <!-- .col-md-6 -->
-      </div> <!-- .item -->
-    <!-- </div> .row -->
-  </div> <!-- .container -->
+  <!-- <h1 class="title">{{title}}</h1> -->
+  <div class="item" *ngFor="let item of [1,2]">
+    <div class="col-md-6 col-sm-12">
+      <img [src]="image" [alt]="title" *ngIf="title && image" loading="lazy" />
+    </div> <!-- .col-md-6 -->
+    <div class="col-md-6 col-sm-12">
+      <div class="content">
+        <h2 class="title" *ngIf="title">{{ title }}</h2>
+        <p *ngIf="description">{{ description }}</p>
+        <div class="tools" *ngIf="tools">
+          Tools used: <span *ngFor="let tool of tools">{{ tool }}</span>
+        </div> <!-- .tools -->
+      </div> <!-- .content -->
+    </div> <!-- .col-md-6 -->
+  </div> <!-- .item -->
 </section>

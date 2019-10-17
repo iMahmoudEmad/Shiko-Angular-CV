@@ -34,4 +34,12 @@
     color: $main-color;
     margin-left: 2rem;
   }
+
+  @media(max-width: 768px) {
+    img {
+      width: 100%;
+      margin: auto;
+      margin-bottom: 2rem;
+    }
+  }
 }

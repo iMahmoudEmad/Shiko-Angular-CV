@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class HomeHeaderComponent implements OnInit {
   headerData = [];
-  data = 'I\'m Shink — an interactive designer & developer exploring new and exciting opportunities.';
+  data = 'I\'m Shiko — an interactive designer & developer exploring new and exciting opportunities.';
   constructor() {
     this.headerData = this.data.split(' ');
   }

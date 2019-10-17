@@ -3,13 +3,19 @@
 .item {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 3rem 0;
 
-  // @media(max-width:600px) {
-  //   .col-md-6 {
-  //     width: 100%;
-  //   }
-  // }
+  @media(max-width:600px) {
+    .content {
+      text-align: center;
+      padding: 1rem;
+
+      h2 {
+        font-size: 1.5rem !important;
+      }
+    }
+  }
 
   &:nth-child(even) {
     .col-md-6:last-child {

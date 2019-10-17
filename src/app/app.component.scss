@@ -53,6 +53,27 @@
       font-size: 1.2rem;
     }
   }
+
+  @media(max-width:992px) {
+    .navbar-nav:first-of-type {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      border-top: 1px solid rgba($white-color, .5);
+      border-bottom: 1px solid rgba($white-color, .5);
+    }
+
+    .navbar-nav:last-of-type {
+      border-bottom: 1px solid rgba($white-color, .5);
+    }
+
+    .nav-link {
+      margin-right: 0;
+      padding: 1rem !important;
+      border-bottom: none !important;
+      color: $white-color;
+    }
+  }
 }
 
 header,

@@ -1,9 +1,13 @@
 <main>
   <section class="test">
-    <h1>beside</h1>
-    <app-text-beside-image></app-text-beside-image>
-    <h1>under</h1>
-    <app-text-under-image></app-text-under-image>
+    <div class="container">
+      <div class="row">
+        <!-- <h1>beside</h1> -->
+        <app-text-beside-image [title]="'title'" [description]="'description'" [tools]="['tools', 'tooling']"></app-text-beside-image>
+        <!-- <h1>under</h1> -->
+        <app-text-under-image [title]="'title'" [description]="'description'"></app-text-under-image>
+      </div>
+    </div>
   </section>
 
   <div class="shadowStyle"></div>

@@ -78,4 +78,41 @@
       }
     }
   }
+
+  @media(max-width:768px) {
+    &:nth-child(even) .project--picture {
+      order: unset;
+      padding-left: 0;
+    }
+
+    &--picture,
+    &--details {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+
+    &--details {
+      width: 90%;
+
+      &__name {
+        font-size: 1.7rem;
+        margin-bottom: .5rem;
+      }
+
+      &__description {
+        padding-left: 0;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      &__route {
+        text-align: center;
+
+        a {
+          font-size: .9rem;
+        }
+      }
+    }
+  }
 }
