@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
-import { ProjectDetailsComponent } from './project-details.component';
+import { ProjectComponent } from './project.component';
 import { TextBesideImageComponent } from '../../components/shared/text-beside-image/text-beside-image.component';
 import { TextUnderImageComponent } from 'src/app/components/shared/text-under-image/text-under-image.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: ProjectDetailsComponent
+    component: ProjectComponent
   },
 ];
 
 @NgModule({
   declarations: [
-    ProjectDetailsComponent,
+    ProjectComponent,
     TextBesideImageComponent,
     TextUnderImageComponent
   ],
@@ -24,4 +24,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class ProjectDetailsModule { }
+export class ProjectModule { }

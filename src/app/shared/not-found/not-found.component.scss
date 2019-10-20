@@ -1,0 +1,40 @@
+@import './../../../variables';
+
+.content {
+  background-color: $white-color;
+  border-radius: 1rem;
+  padding: 1rem;
+  color: rgba($main-color, .5);
+  width: 50%;
+
+  @media(max-width: 768px) {
+    width: 100%;
+  }
+
+  .title {
+    color: $main-color;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: $CTA-color;
+
+    &:hover {
+      text-decoration: underline;
+      color: darken($CTA-color, 30%);
+    }
+
+    i.fa {
+      margin-right: .5rem;
+    }
+  }
+}

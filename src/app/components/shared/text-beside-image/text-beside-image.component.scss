@@ -1,6 +1,6 @@
 @import './../../../../_variables.scss';
 
-.item {
+.project {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -17,10 +17,8 @@
     }
   }
 
-  &:nth-child(even) {
-    .col-md-6:last-child {
-      order: -1;
-    }
+  &.imgRight .col-md-6:last-child {
+    order: -1;
   }
 
   img {
@@ -35,21 +33,23 @@
 
     p,
     .tools {
-      font-size: .85rem;
+      font-size: 1rem;
+      padding-left: 1rem;
     }
 
     h2 {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       color: $white-color;
-      font-size: 1.2rem;
+      font-size: 1.7rem;
       font-weight: 700;
-      line-height: 2rem;
+      line-height: 2.7rem;
       text-transform: capitalize;
+      letter-spacing: .05rem;
     }
 
     p {
       margin-bottom: 0;
-      color: rgba($white-color, .5);
+      color: rgba($white-color, .7);
     }
 
     .tools {
@@ -57,7 +57,7 @@
       color: $white-color;
 
       span {
-        color: rgba($white-color, .5);
+        color: rgba($white-color, .7);
 
         &:after {
           content: ',';

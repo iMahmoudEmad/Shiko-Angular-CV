@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
+import { NotFoundComponent } from './shared/not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -14,9 +15,13 @@ const routes: Routes = [
   },
   {
     path: 'project',
-    loadChildren: './pages/project-details/project-details.module#ProjectDetailsModule',
+    loadChildren: './pages/project/project.module#ProjectModule',
     data: {animation: 'isRight'}
   },
+  {
+    path: '**',
+    component: NotFoundComponent
+  }
 ];
 
 @NgModule({
