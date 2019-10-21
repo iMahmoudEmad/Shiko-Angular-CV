@@ -1,9 +1,9 @@
-@import './../../../variables';
+@import './../../../../variables';
 
 .content {
   background-color: $white-color;
-  border-radius: 1rem;
-  padding: 1rem;
+  border-radius: .5rem;
+  padding: 1.5rem;
   color: rgba($main-color, .5);
   width: 50%;
 

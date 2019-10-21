@@ -1,6 +1,12 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { fader } from './router-animations';
+import {
+  Component
+} from '@angular/core';
+import {
+  RouterOutlet
+} from '@angular/router';
+import {
+  fader
+} from './router-animations';
 
 @Component({
   selector: 'app-root',
@@ -14,8 +20,7 @@ import { fader } from './router-animations';
   ]
 })
 export class AppComponent {
-  pages = [
-    {
+  pages = [{
       name: 'about',
       url: 'about'
     },
@@ -25,8 +30,7 @@ export class AppComponent {
     }
   ];
 
-  socialLinks = [
-    {
+  socialLinks = [{
       icon: 'facebook',
       url: ''
     },
@@ -42,5 +46,9 @@ export class AppComponent {
 
   prepareRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
+  }
+
+  onActivate(event) {
+    window.scroll(0, 0);
   }
 }

@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProjectComponent } from './project.component';
 import { TextBesideImageComponent } from '../../components/shared/text-beside-image/text-beside-image.component';
 import { TextUnderImageComponent } from 'src/app/components/shared/text-under-image/text-under-image.component';
+import { ProjectHeaderComponent } from 'src/app/components/project-header/project-header.component';
 
 const routes: Routes = [
   {
@@ -16,7 +17,8 @@ const routes: Routes = [
   declarations: [
     ProjectComponent,
     TextBesideImageComponent,
-    TextUnderImageComponent
+    TextUnderImageComponent,
+    ProjectHeaderComponent
   ],
   imports: [
     RouterModule.forChild(routes),
