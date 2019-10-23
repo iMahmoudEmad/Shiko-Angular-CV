@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProjectInformationComponent implements OnInit {
   @Input() information;
+  @Input() titleColor;
   constructor() { }
 
   ngOnInit() {
