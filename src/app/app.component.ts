@@ -8,6 +8,8 @@ import {
   fader
 } from './router-animations';
 
+import * as AOS from 'aos';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -50,5 +52,13 @@ export class AppComponent {
 
   onActivate(event) {
     window.scroll(0, 0);
+  }
+
+  ngOnInit() {
+    AOS.init({
+      duration: 1200,
+      delay: 200,
+      // once: true
+    });
   }
 }
