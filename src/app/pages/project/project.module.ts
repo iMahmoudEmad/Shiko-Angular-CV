@@ -5,6 +5,7 @@ import { ProjectComponent } from './project.component';
 import { TextBesideImageComponent } from '../../components/shared/text-beside-image/text-beside-image.component';
 import { TextUnderImageComponent } from 'src/app/components/shared/text-under-image/text-under-image.component';
 import { ProjectHeaderComponent } from 'src/app/components/project-header/project-header.component';
+import { ProjectInformationComponent } from 'src/app/components/project-information/project-information.component';
 
 const routes: Routes = [
   {
@@ -18,7 +19,8 @@ const routes: Routes = [
     ProjectComponent,
     TextBesideImageComponent,
     TextUnderImageComponent,
-    ProjectHeaderComponent
+    ProjectHeaderComponent,
+    ProjectInformationComponent
   ],
   imports: [
     RouterModule.forChild(routes),

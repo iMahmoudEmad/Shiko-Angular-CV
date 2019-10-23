@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-md-8">
+        <div class="content">
+            <h2 class="title">{{information.title}}</h2>
+            <p>{{information.description}}</p>
+        </div> <!-- .content -->
+    </div> <!-- .col-md-8 -->
+    <div class="col-md-4">
+        <div class="content">
+            <div class="info info-data" *ngFor="let list of information.lists">
+                <h2 class="title">{{list.title}}</h2>
+                <ul class="list-unstyled">
+                    <li *ngFor="let item of list.data">{{item}}</li>
+                </ul>
+            </div> <!-- .info -->
+            <a [href]="information.link" *ngIf="information.link">visit website</a>
+        </div> <!-- .content -->
+    </div> <!-- .col-md-4 -->
+</div> <!-- .row -->

@@ -1,0 +1,62 @@
+@import './../../../variables';
+
+.content{
+    padding: 1rem;
+
+    .title,
+    a {
+        text-transform: uppercase;
+        color: aqua;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .title, 
+    p{
+        font-size: 1.5rem;
+    }
+
+    .title {
+        margin-bottom: .5rem;
+    }
+
+    p {
+        line-height: 3rem;
+        padding-right: 5rem;
+    }
+
+    .info-data {
+        margin-bottom: 2rem;
+
+        h2.title {
+            font-size: 1.2rem;
+        }
+
+        li {
+            color: rgba($white-color, .85);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .title, p{
+            font-size: 1rem;
+        }
+
+        p {
+            line-height: 1.5rem;
+            padding-right: 0;
+        }
+    }
+
+    @media (min-width:400px) and (max-width: 768px) {
+        &:last-child {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            .info-data{
+                margin-right: 2rem;
+            }
+        }
+    }
+}
