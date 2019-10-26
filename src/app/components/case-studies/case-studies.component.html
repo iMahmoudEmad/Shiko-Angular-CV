@@ -10,11 +10,11 @@
   </div> <!-- .case-study-header -->
 
   <div class="row">
-    <div class="col-md-6 col-xs-xs-12" 
-         *ngFor="let case of [1, 2]; let isLast = last" 
+    <div class="col-md-6 col-xs-xs-12"
+         *ngFor="let case of [1, 2]; let isLast = last; let  i = index"
          [attr.data-aos]="isLast ? 'fade-left' : 'fade-right'"
          data-aos-offset="500"
-         [attr.data-aos-duration]="500 + (i * 1000)">
+         [attr.data-aos-duration]="500 + (i * 500)">
       <div class="cases text-center" routerLink="/project">
         <img src="https://d33wubrfki0l68.cloudfront.net/c57a287843285bf3b7e368b64c48af186b4c0610/edbfc/static/images/projects/chatter/preview/chatter-phone-right.png" alt="Picture">
         <div class="case">
