@@ -1,31 +1,25 @@
 <main>
-  <section class="project-header">
-    <div class="container">
-      <app-project-header [title]="'KIC'"
-                          [description]="'Be Kind and Get Rewarded'"
-                          [image]="'assets/favicon.gif'"
-                          [titleColor]="'#f00'">
-      </app-project-header>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <app-project-information [information]="information"
-                               [titleColor]="'#f00'"></app-project-information>
-    </div>
-  </section>
-  <section class="projects">
-    <div class="container">
-      <h1>beside</h1>
-      <div class="row">
-        <app-text-beside-image [projects]="projects"></app-text-beside-image>
-      </div> <!-- .row -->
-      <h1>under</h1>
-      <div class="row">
-        <app-text-under-image [title]="'title'" [description]="'description'"></app-text-under-image>
-      </div> <!-- .row -->
-    </div> <!-- .container -->
-  </section>
+	<section class="project-header">
+		<div class="container">
+			<app-project-header [title]="'KIC'" [description]="'Be Kind and Get Rewarded'" [image]="'assets/favicon.gif'"
+				[titleColor]="'#f00'">
+			</app-project-header>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<app-project-information [information]="information" [titleColor]="'#f00'"></app-project-information>
+		</div>
+	</section>
+	<section class="projects">
+		<div class="container">
+			<app-text-beside-image [projects]="projects"></app-text-beside-image>
 
-  <div class="shadowStyle"></div>
+			<div class="row">
+				<app-text-under-image [title]="'title'" [description]="'description'"></app-text-under-image>
+			</div> <!-- .row -->
+		</div> <!-- .container -->
+	</section>
+
+	<div class="shadowStyle"></div>
 </main>

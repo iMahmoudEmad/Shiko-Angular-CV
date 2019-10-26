@@ -1,74 +1,80 @@
 @import './../../../../_variables.scss';
 
 .project {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 3rem 0;
+	padding: 6rem 0;
 
-  @media(max-width:600px) {
-    .content {
-      text-align: center;
-      padding: 1rem;
+	&.imgRight .col-md-6:last-child {
+		order: -1;
+	}
 
-      h2 {
-        font-size: 1.5rem !important;
-      }
-    }
-  }
+	img {
+		width: 80%;
+		margin: 0 auto;
+		display: block;
+		height: auto;
+	}
 
-  &.imgRight .col-md-6:last-child {
-    order: -1;
-  }
+	.content {
+		width: 100%;
 
-  img {
-    width: 80%;
-    margin: 0 auto;
-    display: block;
-    height: auto;
-  }
+		p,
+		.tools {
+			font-size: 1.2rem;
+			padding-left: 1.5rem;
+		}
 
-  .content {
-    width: 100%;
+		h2 {
+			margin-bottom: 1.5rem;
+			color: $white-color;
+			font-size: 2.5rem;
+			font-weight: 700;
+			line-height: 2.7rem;
+			text-transform: capitalize;
+			letter-spacing: .05rem;
+		}
 
-    p,
-    .tools {
-      font-size: 1rem;
-      padding-left: 1rem;
-    }
+		p {
+			margin-bottom: 0;
+			color: rgba($white-color, .8);
+			line-height: 2rem;
+		}
 
-    h2 {
-      margin-bottom: 1.5rem;
-      color: $white-color;
-      font-size: 1.7rem;
-      font-weight: 700;
-      line-height: 2.7rem;
-      text-transform: capitalize;
-      letter-spacing: .05rem;
-    }
+		.tools {
+			margin-top: 1rem;
+			color: $white-color;
 
-    p {
-      margin-bottom: 0;
-      color: rgba($white-color, .7);
-    }
+			span {
+				color: rgba($white-color, .7);
 
-    .tools {
-      margin-top: 1rem;
-      color: $white-color;
+				&:after {
+					content: ',';
+					margin-right: 5px;
+				}
 
-      span {
-        color: rgba($white-color, .7);
+				&:last-of-type:after {
+					margin-right: 0;
+					content: '';
+				}
+			}
+		}
+	}
 
-        &:after {
-          content: ',';
-          margin-right: 5px;
-        }
+	@media(max-width:600px) {
+		&.imgRight .col-md-6:last-child {
+			order: 1;
+		}
 
-        &:last-of-type:after {
-          margin-right: 0;
-          content: '';
-        }
-      }
-    }
-  }
+		.content {
+			text-align: center;
+			padding: 1rem;
+
+			h2 {
+				font-size: 1.5rem;
+			}
+
+			p {
+				padding-left: 0;
+			}
+		}
+	}
 }

@@ -6,10 +6,10 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./text-beside-image.component.scss']
 })
 export class TextBesideImageComponent implements OnInit {
-  @Input() image: string;
-  @Input() title: string;
-  @Input() description: string;
-  @Input() tools: any[];
+  // @Input() image: string;
+  // @Input() title: string;
+  // @Input() description: any[];
+  // @Input() tools: any[];
   @Input() projects: any[];
 
   constructor() { }
